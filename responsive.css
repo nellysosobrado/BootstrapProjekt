@@ -1,0 +1,70 @@
+/* Medium Layout: 1280px.*/
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+}
+/* Tablet Layout: 768px.*/
+@media only screen and (min-width: 768px) and (max-width:991px){
+.banner-text
+{
+    transform: translate(-50%,125%);
+}
+.navbar-nav{
+    background: #000;
+}
+.navbar-toggler-icon i{
+    color:#fff;
+}
+.services-area h3{
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+}
+/* Mobile Layout: 320px.*/
+@media only screen and  (max-width:767px){
+    .banner-text{
+    transform: translate(-50%,45%);
+    }
+    .banner-text h1{
+        font-size:25px;
+    }
+    .banner-text h2{
+        font-size:19px;
+    }
+    .navbar-nav{
+        background: #000;
+    }
+    .navbar-toggler-icon i{
+        color:#fff;
+    }
+    .section-padding{
+        padding:40px 0;
+    }
+    .section-header h2{
+        font-size:30px;
+    }
+    .item-text h4{
+        margin-top:25px;
+    }
+    .services-area h3{
+        font-size:22px;
+    }
+    .single-portfolio{
+        margin-bottom: 15px;
+    }
+    .newsletter-area h4{
+        font-size:17px;
+    }
+    .newsletter-area input{
+        width:100%;
+        margin-top:15%;
+    }
+    .newsletter-area button{
+        width:100%;
+        margin-top:15px;
+    }
+}
+/*wide  Mobile Layout: 480px.*/
+@media only screen and (min-width: 480px) and (max-width:767px){
+     
+}
