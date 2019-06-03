@@ -1,44 +1,50 @@
-<!doctype html>
-<html lang="eng">
+<!doctype html> <!-- måste ha för att skapa en standrad html sidan -->
+<html lang="en">
+    <!-- anger html språk till engelska -->
 <head>
-        <meta charset="utf-8">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Bootstrap website</title>
-    <link rel="stylesheet" type="text/bootstrap.min.css">
+        <meta charset="utf-8">  <!--  tillgång till att använda svenska bokstäver tex Å,Ä,Ö  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- html fönster ruta anpassas för mobil användare -->
+    <title>Menu</title>
+    <!-- menu kopplas till olika css,hemsida filer med olika egenskaper och funktioner -->
+    <link rel="stylesheet" href="text/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    
+    <!-- Här skapas en bar av knappar och även drop bar knappen. För att kunna navigera sig igenom hemsidans html sidor -->
     <nav class="navbar navbar-expand-lg navbar-light w-100">
         <a class="navbar-brand" href="#">Nelly Resturant</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
         </button>
-
+<!-- Baren med knappar kopplas till olika klasser och id -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav">
+              <!-- Home knappen -->
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
+            <!-- Menu knappen  -->
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
+            <!-- Delivery knappen -->
             <li class="nav-item">
                 <a class="nav-link" href="delivery.html">Delivery</a>
               </li>          
+              <!-- Kanpp som navigerar till about us html sidan -->
               <li class="nav-item">
-                <a href="#aboutus" class="nav-link">About us</a>
+                    <a href="Aboutus.html" class="nav-link">About us</a>
               </li>
+              <li class="nav-item"><!-- skapar en knapp i drop knappen -->
+                <a href="contact.html" class="nav-link">Contact</a><!-- ger knappen namnet "contact" och när användaren klickar på knappen så navigeras hen till contact html sidan-->
+              </li>
+              <!-- Knapp som navigerar till location -->
               <li class="nav-item">
-                    <a href="#location" class="nav-link">Location</a>
+                    <a href="location.html" class="nav-link">Location</a>
                   </li>
-                  
-                      
 
           </ul>
         </div>
@@ -48,17 +54,20 @@
      <div class="about-area">
             <div class="container">
                     <div class="row section-header">
+                        <!-- Rubrik som visas alra längst upp under baren med knappar -->
                         <div class="col-md-12 text-center">
                             <h2>Menu</h2>
                             <p class="line"></p>
                         </div>
                     </div>
                     <div class="row justify-content-center">
+                        <!-- En bild av olika mat rätter med olika priser i en bild -->
                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <img src="About.jpg"alt="" class="img-fluid">
+                          <img src="image/menu1.jpg" alt="" class="img-fluid">
                       </div>
+                      <!-- Höger om bilden så skapas rubrik och text som man kan ha tex för förklaring  -->
                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 item-text">
-                          <h4><a  name="aboutus">Information</a></h4>
+                          <h4><a id="aboutus">Information</a></h4>
                           
                           <p>text.text.text.text.text.text.text.text.
                                 text.text.text.text.text.text. text.text.text.text.text.text.text.text.
@@ -75,36 +84,49 @@
                     </div>
                 </div>
 </div>
-<!--Portfolio area-->
+<!--Här visas mat of the day. Och den kommer visas upp som en portfolio men mer mat utssende-->
 <div class="portfolio-area section-padding">
         <div class="row section-header">
+            <!-- gör så att texten hamnar i center och att de ser finare ut utssende vis.  -->
                 <div class="col-md-12 text-center">
+
+                    <!-- Rubrik -->
                     <h2>Popular dish of the day</h2>
                     <p class="line"></p>
                 </div>
             </div>
+            <!-- här visas första maträtten upp -->
             <div class="row">
                 <div class="col-md-4">
                     <div class="single-portfolio">
-                        <img src="image/mat1.jpeg" width="100%" height="100%"  alt="" class="portfolio-img">
+                        <!-- Bilden av maträten. Bilden är kopplad till två klasser som gör så att när musen är över bilden så sker en liten animation -->
+                        <img src="image/mat1.jpeg"  alt="" class="portfolio-img responsive-bild">
                         <div class="portfolio-text">
+                            <!-- rubrik och text på bilden -->
                             <h3>RUBRIK</h3>
                             <p>text</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
+                    <!-- Här visas andra maträtten upp -->
                         <div class="single-portfolio">
-                            <img src="image/mat2.jpg"width="100%" height="100%" alt="" class="portfolio-img">
+                            <!-- Bild av maträtten. Här sker en liten animation när musen är över bilden.Bilden anpassas till en särskild storlek. -->
+                            <img src="image/mat2.jpg" alt="" class="portfolio-img responsive-bild">
+                            <!-- Rubrik och text visas på bilden när musen är över bilden -->
                             <div class="portfolio-text">
                                 <h3>RUBRIK</h3>
                                 <p>text</p>
                             </div>
                         </div>
                     </div>
+                    <!-- bilden och texterna hamnar i en särskild plats på hemsidan, så det ser finare ut -->
                     <div class="col-md-4">
+                        <!-- single-portfolio klassen kopplas till div och ger dens egenskaper till div. -->
                             <div class="single-portfolio">
-                                <img src="image/mat3.jpeg"width="100%" height="100%"  alt="" class="portfolio-img">
+                                <!-- bild visas. Tillsammans med två klasser som ger olika egenskaper. Tex gör så att bilden hamnar i en specifik storlek. Och att bilden får en liten animation när man har musen över bilden. -->
+                                <img src="image/mat3.jpeg" alt="" class="portfolio-img responsive-bild">
+                                <!-- text rubrik visas när musen är över bilden. -->
                                 <div class="portfolio-text">
                                     <h3>RUBRIK</h3>
                                     <p>text</p>
@@ -120,14 +142,10 @@
       <p>&copy;2018 All right Reserved</p>
   </footer>
       <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. html dokumentet kopplas till olika sidor där dne tar olika funktioner och egenskaper och gör det till sitt via internet. -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <!-- <script src="js/jquery-3.2.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> -->
+     
 </body>
-
-
 </html>
